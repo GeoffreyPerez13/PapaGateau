@@ -23,6 +23,12 @@ Single page application pour PapaGateau (patissier à la Seyne sur mer).
 # Démarrer le serveur :
 - php -S localhost:8000 -t public
 
+# Compiler avec SCSS :
+- composer require symfony/webpack-encore-bundle
+- npm install --save-dev sass-loader@12.0.0 sass webpack webpack-cli
+- enableSassLoade a décommenter dans webpack.config.js
+- npm run watch
+
 # Création des controllers :
 - php bin/console make:controller -> HomeController
 - php bin/console make:controller -> ProductController
